@@ -1,10 +1,9 @@
-import cv2
-import numpy as np
-import imutils
 from skimage.filters import threshold_local
+import numpy as np
+import cv2
+import imutils
 
 def put_points_in_order(pts):
-    #Упорядочивание 4 точки по часовой стрелке
     rect = np.zeros((4, 2), dtype="float32")
     s = pts.sum(axis=1)
     rect[0] = pts[np.argmin(s)]
@@ -15,7 +14,6 @@ def put_points_in_order(pts):
     return rect
 
 def four_point_transforming(image, pts):
-    #Перспективное проеобразование
     rect = put_points_in_order(pts)
     (tl, tr, br, bl) = rect
     widthA = np.sqrt(((br[0] - bl[0]) ** 2) + ((br[1] - bl[1]) ** 2))
@@ -35,15 +33,11 @@ def four_point_transforming(image, pts):
     return warped
 
 def scan_document_main(image_path):
-    #Основное сканирование
     image = cv2.imread(image_path)
-    if image is None:
-        return None
-    
     ratio = image.shape[0] / 500.0
     orig = image.copy()
     image = imutils.resize(image, height=500)
-    
+
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     gray = cv2.GaussianBlur(gray, (5, 5), 0)
     edged = cv2.Canny(gray, 75, 200)
