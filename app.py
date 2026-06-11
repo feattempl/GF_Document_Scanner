@@ -2,7 +2,7 @@ import os
 import uuid
 from flask import Flask, request, render_template, send_file, jsonify
 from werkzeug.utils import secure_filename
-from scanner import scan_document
+from doc_scanner import scan_document_main
 import cv2
 
 app = Flask(__name__)
