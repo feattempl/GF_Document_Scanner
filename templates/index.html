@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Document Scanner</h1>
+        <p class="subtitle">Загрузите фото документа, и мы сделаем скан</p>
+        
+        <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+            <p>Нажмите, чтобы выбрать фото</p>
+            <p class="hint">JPG, PNG, JPEG, BMP, TIFF</p>
+        </div>
+        <input type="file" id="fileInput" accept="image/*">
+        
+        <button id="scanBtn" onclick="scanDocument()" disabled>Отсканировать</button>
+        
+        <div class="loader" id="loader">
+            <p>Обработка изображения...</p>
+        </div>
+        
+        <div class="preview" id="preview"></div>
+        <div class="error" id="error"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
