@@ -7,7 +7,7 @@ Document scanner on Python
 
 ## ПРИМЕЧАНИЕ!
 
-В папке *example/* Вы найдетё скриншот чека из магазина для примера (взято с сайта самого проекта в силу самого подходящего формата)
+В папке *example/* Вы найдетё скриншот чека из магазина для примера (взято с сайта самого проекта в силу самого подходящего формата), а также скриншот примера работы приложения.
 
 # Стек
 
@@ -19,11 +19,11 @@ Document scanner on Python
 
 *Terminal*:
 
-git clone git@github.com:feattempl/GF_Document_Scanner.git
+git clone git@github.com:feattempl/GF_Document_Scanner.git ;
 cd GF_Document_Scanner
 
 *bash*:
 
-pip3 install flask opencv-python numpy imutils scikit-image werkzeug
+pip3 install flask opencv-python numpy imutils scikit-image werkzeug ;
 python app.py
 
