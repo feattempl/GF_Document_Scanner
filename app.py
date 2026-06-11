@@ -38,7 +38,7 @@ def scan():
     file.save(filepath)
     
     try:
-        scanned = scan_document(filepath)
+        scanned = scan_document_main(filepath)
         if scanned is None:
             os.remove(filepath)
             return jsonify({'error': 'Не удалось найти контур документа'}), 400
