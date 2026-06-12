@@ -19,11 +19,11 @@ Document scanner on Python
 
 *Terminal*:
 
-- git clone git@github.com:feattempl/GF_Document_Scanner.git ;
+- git clone git@github.com:feattempl/GF_Document_Scanner.git 
 - cd GF_Document_Scanner
 
 *bash*:
 
-- pip3 install flask opencv-python numpy imutils scikit-image werkzeug ;
+- pip3 install flask opencv-python numpy imutils scikit-image werkzeug gunicorn 
 - python app.py
 
