@@ -3,7 +3,7 @@ Document scanner on Python
 
 # Document_Scanner
 
-Веб-приложение для удобного сканирования документов. Вы можете загрузить документа (или, например, чека из магазина) и приложение автоматически его выпрямит и приведёт виду, готовому для использования где-либо.
+Веб-приложение для удобного сканирования документов. Вы можете загрузить документа (или, например, чека из магазина) и приложение автоматически его выпрямит и приведёт виду, готовому для использования где-либо. В проекте реализована веб-версия приложения.
 
 ## ПРИМЕЧАНИЕ!
 
@@ -11,19 +11,19 @@ Document scanner on Python
 
 # Стек
 
-*Backend*: Flask, Python 3.9+
-*Computer Vision*: OpenCV, scikit-image, imutils, NumPy
-*Frontend*: HTML, CSS, JavaScript
+- *Backend*: Flask, Python 3.9+
+- *Computer Vision*: OpenCV, scikit-image, imutils, NumPy
+- *Frontend*: HTML, CSS, JavaScript
 
 # Как запустить локально?
 
-*Terminal*:
+- *Terminal*:
 
-git clone git@github.com:feattempl/GF_Document_Scanner.git ;
-cd GF_Document_Scanner
+- git clone git@github.com:feattempl/GF_Document_Scanner.git ;
+- cd GF_Document_Scanner
 
 *bash*:
 
-pip3 install flask opencv-python numpy imutils scikit-image werkzeug ;
-python app.py
+- pip3 install flask opencv-python numpy imutils scikit-image werkzeug ;
+- python app.py
 
