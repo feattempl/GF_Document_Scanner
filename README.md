@@ -17,7 +17,7 @@ Document scanner on Python
 
 # Как запустить локально?
 
-- *Terminal*:
+*Terminal*:
 
 - git clone git@github.com:feattempl/GF_Document_Scanner.git ;
 - cd GF_Document_Scanner
